@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Patrion Case (Weather App with a map)
 
-## Getting Started
+## Used libraries
 
-First, run the development server:
+- [NextJS](https://nextjs.org) + [TypeScript](https://www.typescriptlang.org/)
+- [Leaflet](https://leafletjs.com/)
+- [React-Leaflet](https://react-leaflet.js.org/)
+- [SWR](https://swr.vercel.app/) + [Axios](https://axios-http.com/docs/intro)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+API:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [OpenWeather](https://openweathermap.org/api)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Description
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+It is a simple nextjs app that shows the weather of the cities you choose on the map.
 
-## Learn More
+## How to run
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repo
+2. Run `yarn install`
+3. Run `yarn dev`
+4. Open `http://localhost:3000` in your browser
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+OR
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Go to [https://patrion-weather.vercel.app/](https://patrion-weather.vercel.app/) in your browser
 
-## Deploy on Vercel
+## Screenshot
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![#1](https://res.cloudinary.com/allstar/image/upload/v1699015739/weather1_howas3.png)
+![#1](https://res.cloudinary.com/allstar/image/upload/v1699015739/weather2_d2wf2s.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Last updated: 2023, 3 November
