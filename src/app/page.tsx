@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { isMobile } from 'react-device-detect';
 
 const Home: FC = () => {
+  const [onMouse, setOnMouse] = React.useState(false);
   const position: LatLngExpression = [39, 35.5];
   const router = useRouter();
 
@@ -38,9 +39,7 @@ const Home: FC = () => {
             weight: 1,
           }}
           eventHandlers={{
-            click: e => {
-              handlePush(e);
-            },
+            click: e => handlePush(e),
           }}
         />
         <GeoJSON
@@ -48,15 +47,13 @@ const Home: FC = () => {
           pointToLayer={(feature, latlng) => {
             return L.marker(latlng, {
               icon: divIcon({
-                className: 'text-white text-xs',
+                className: 'marker-icon',
                 html: feature.properties.name,
               }),
             });
           }}
           eventHandlers={{
-            click: e => {
-              handlePush(e);
-            },
+            click: e => handlePush(e),
           }}
         />
       </MapContainer>
