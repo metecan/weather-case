@@ -25,7 +25,7 @@ const WeatherPage: FC = () => {
 
   const { data, isLoading, error } = useFetchWeather(lat, lon);
 
-  if (!error) {
+  if (error) {
     return <Error error={error} reset={() => router.push('/')} />;
   }
 
