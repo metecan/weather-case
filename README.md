@@ -24,7 +24,7 @@ It is a simple nextjs app that shows the weather of the cities you choose on the
 
 OR
 
-1. Go to [https://patrion-weather.vercel.app/](https://patrion-weather.vercel.app/) in your browser
+1. Go to [https://weather-case.vercel.app/](https://weather-case.vercel.app/) in your browser
 
 ## Screenshot
 
