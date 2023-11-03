@@ -28,7 +28,7 @@ const Map: FC<MapProps> = ({ position }) => {
       dragging={isMobile}
       maxZoom={6.8}
     >
-      <TileLayer url={process.env.NEXT_PUBLIC_LAYER_URL as string} />
+      <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}/{y}.png" />
       <GeoJSON
         data={CitiesData as any}
         style={{
