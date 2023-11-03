@@ -10,6 +10,7 @@ import { convertTo24Hour } from 'src/app/utils/converTime';
 import { titleCase } from 'src/app/utils/titleCase';
 import IconText from 'src/app/components/IconText/IconText';
 import { useFetchWeather } from 'src/app/hooks/useFetchWeather';
+import Error from 'src/app/components/Error/Error';
 
 const WeatherPage: FC = () => {
   const router = useRouter();
@@ -22,7 +23,11 @@ const WeatherPage: FC = () => {
   const lat = latlong.toString().split('%2C')[0];
   const lon = latlong.toString().split('%2C')[1];
 
-  const { data, isLoading } = useFetchWeather(lat, lon);
+  const { data, isLoading, error } = useFetchWeather(lat, lon);
+
+  if (!error) {
+    return <Error error={error} reset={() => router.push('/')} />;
+  }
 
   if (isLoading) {
     return (
